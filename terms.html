@@ -49,10 +49,16 @@
     </ul>
 
     <h2>4. Community rules</h2>
-    <p>Follow Discord’s terms and guidelines in our server. We may moderate or remove posts and access for violations.</p>
+    <p>When participating in our community (including our Discord server), you must follow both Vlogit’s rules and <a href="https://discord.com/guidelines" target="_blank" rel="noopener">Discord’s Community Guidelines</a> and <a href="https://discord.com/terms" target="_blank" rel="noopener">Terms of Service</a>.</p>
+    <p>We may moderate or remove posts, limit access, or suspend accounts for violations. <strong>If you violate these rules, your subscription and access to perks may be terminated without refund</strong>, as determined by Discord or Vlogit.</p>
 
     <h2>5. Paid features</h2>
-    <p>Some features may be paid (e.g., supporter subscriptions processed by Discord through Stripe). Prices may change with notice. Taxes may apply. Payments are handled by our providers; their terms apply. Refunds are subject to Discord and BuyMeACoffee's own policies.</p>
+    <p>Some features may require payment (e.g., supporter subscriptions processed by Discord through Stripe, or one-time donations processed through Buy Me a Coffee).</p>
+    <ul>
+      <li><strong>Payments & Refunds</strong>: All subscription payments, renewals, and refunds are processed directly by Discord (via Stripe) and are subject to Discord’s own terms, policies, and refund rules. One-time donations are processed through Buy Me a Coffee and are subject to Buy Me a Coffee’s own terms and refund policies. Vlogit does not control billing and is not responsible for issuing refunds.</li>
+      <li><strong>Perks & Benefits</strong>: Subscriptions may provide access to exclusive server channels, roles, polls, or other digital perks as described at the time of purchase. Benefits are managed by Vlogit, but their availability is not guaranteed and may change or be discontinued at any time.</li>
+      <li><strong>Third-Party Terms</strong>: By subscribing or donating, you also agree to the terms and policies of the applicable payment provider (e.g., Discord, Stripe, Buy Me a Coffee).</li>
+    </ul>
 
     <h2>6. Beta features</h2>
     <p>Pre-release features may change or be discontinued. We may collect feedback and usage data to improve performance and safety.</p>
@@ -78,6 +84,9 @@
     <h2>12. Changes</h2>
     <p>We may update these Terms; continued use means you accept the updated Terms.</p>
 
+    <h2>13. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Vlogit, its affiliates, officers, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorney’s fees) arising out of or related to: (a) your use of the Service, (b) your violation of these Terms or applicable laws, or (c) any content you upload or provide through the Service.</p>
+
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -100,7 +109,6 @@
     // Email obfuscation
     document.querySelectorAll('.eml').forEach(el => {
       const addr = `${el.dataset.u}@${el.dataset.d}`;
-      // Only replace text content if it's already an email format or empty
       if (el.textContent.includes('@') || el.textContent.trim() === '') {
         el.textContent = addr;
       }
