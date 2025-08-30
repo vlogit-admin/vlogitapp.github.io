@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Vlogit</title>
+  <link rel="icon" href="/assets/vlogit-icon.png">
+  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token":"2eca0ead6fc1478e966865faebb2bcac"}'></script>
+  <style>.legal{max-width:900px;margin:0 auto;padding:40px 20px;line-height:1.6}.legal h1{margin:0 0 8px}.legal h2{margin-top:26px}.legal p,.legal li{color:#c9c9cf}</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/"><img src="/assets/vlogit-logo-white.png" alt="Vlogit" class="logo massive"></a>
+      <nav class="nav">
+        <div class="social-icons">
+          <a href="https://instagram.com/theofficialvlogit" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@vlogitofficial" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://x.com/officialvlogit" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x"></i></a>
+        </div>
+        <a class="btn small contact-btn mailto eml" data-u="contact" data-d="vlogit.app">Contact Us</a>
+        <a class="btn small" href="/privacy.html">Privacy</a>
+        <a class="btn small" href="/terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+  <main class="legal">
+    <h1>Terms of Service</h1>
+    <p><em>Last updated: <span id="d"></span></em></p>
+
+    <h2>1. Agreement</h2>
+    <p>By accessing our website, community, or mobile apps (the “Service”), you agree to these Terms and our Privacy Policy.</p>
+
+    <h2>2. Your account</h2>
+    <ul>
+      <li>Provide accurate information and keep credentials secure.</li>
+      <li>You must be at least 13 years old (or the minimum age in your region).</li>
+    </ul>
+
+    <h2>3. Content & licenses</h2>
+    <ul>
+      <li>You retain ownership of videos you upload. You grant Vlogit a worldwide, non-exclusive, royalty-free license to host, process, transmit, display, and create transcoded/derivative works solely to operate and improve the Service.</li>
+      <li>Do not upload content that is illegal, infringing, hateful, harassing, or violates others’ privacy or intellectual property.</li>
+      <li>We may remove content or suspend accounts that violate these Terms.</li>
+    </ul>
+
+    <h2>4. Community rules</h2>
+    <p>Follow Discord’s terms and guidelines in our server. We may moderate or remove posts and access for violations.</p>
+
+    <h2>5. Paid features</h2>
+    <p>Some features may be paid (e.g., supporter subscriptions processed by Discord through Stripe). Prices may change with notice. Taxes may apply. Payments are handled by our providers; their terms apply. Refunds are subject to Discord and BuyMeACoffee's own policies.</p>
+
+    <h2>6. Beta features</h2>
+    <p>Pre-release features may change or be discontinued. We may collect feedback and usage data to improve performance and safety.</p>
+
+    <h2>7. Acceptable use</h2>
+    <ul>
+      <li>No reverse engineering, scraping, or interfering with the Service.</li>
+      <li>No uploading malware or attempting to access others’ accounts.</li>
+    </ul>
+
+    <h2>8. Disclaimers & limitation of liability</h2>
+    <p>The Service is provided “as is” without warranties. To the fullest extent permitted by law, Vlogit is not liable for indirect, incidental, special, consequential, or punitive damages, or any loss of data or profits.</p>
+
+    <h2>9. Termination</h2>
+    <p>You may stop using the Service at any time. We may suspend or terminate for violations, risk, or legal reasons.</p>
+
+    <h2>10. Governing law</h2>
+    <p>These Terms are governed by the laws of Delaware and, as applicable, the United States, excluding conflict-of-law rules.</p>
+
+    <h2>11. Contact</h2>
+    <p>Support or legal notices: <a class="mailto eml" data-u="support" data-d="vlogit.app">support@vlogit.app</a>.</p>
+
+    <h2>12. Changes</h2>
+    <p>We may update these Terms; continued use means you accept the updated Terms.</p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="y"></span> Vlogit, Inc.</span>
+      <nav class="footnav">
+        <div class="social-icons">
+          <a href="https://instagram.com/theofficialvlogit" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@vlogitofficial" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://x.com/officialvlogit" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x"></i></a>
+        </div>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a class="mailto eml" data-u="contact" data-d="vlogit.app">contact@vlogit.app</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+    document.getElementById('d').textContent=new Date().toLocaleDateString();
+    // Email obfuscation
+    document.querySelectorAll('.eml').forEach(el => {
+      const addr = `${el.dataset.u}@${el.dataset.d}`;
+      // Only replace text content if it's already an email format or empty
+      if (el.textContent.includes('@') || el.textContent.trim() === '') {
+        el.textContent = addr;
+      }
+      el.href = 'mailto:' + addr;
+    });
+  </script>
+</body>
+</html>

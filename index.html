@@ -3,72 +3,134 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vlogit — Capture Your Day!</title>
-  <meta name="description" content="Vlogit is the daily group-vlogging app. Join the waitlist and get updates." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:#0b0b0c;color:#fff;display:flex;min-height:100vh}
-    .wrap{margin:auto;max-width:780px;padding:48px 24px;text-align:center}
-    h1{font-size:42px;line-height:1.1;margin:0 0 12px}
-    p{opacity:.85;font-size:18px}
-    .cta{margin-top:24px;display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center}
-    a.btn{padding:12px 18px;border-radius:10px;border:1px solid #333;text-decoration:none;color:#fff}
-    a.btn.primary{background:#5b6cff;border-color:#5b6cff}
-    footer{margin-top:40px;opacity:.7;font-size:14px}
-    nav{position:fixed;top:0;left:0;right:0;padding:12px 16px;font-size:14px;opacity:.7}
-  </style>
+  <title>Vlogit — Capture Your Day</title>
+  <meta name="description" content="Vlogit is the daily group-vlogging app. Join the journey and get early updates." />
+  <link rel="icon" href="/assets/vlogit-icon.png">
+  <link rel="apple-touch-icon" href="/assets/vlogit-icon.png">
+  <meta property="og:title" content="Vlogit — Capture Your Day">
+  <meta property="og:description" content="The daily group-vlogging app." />
+  <meta property="og:image" content="https://vlogit.app/assets/vlogit-icon.png">
+  <meta name="theme-color" content="#0b0b0c">
+
+  <!-- Correct path to CSS (+ cache-buster) -->
+  <link rel="preload" href="/css/styles.css?v=5" as="style">
+  <link rel="stylesheet" href="/css/styles.css?v=5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Cloudflare Web Analytics -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token":"2eca0ead6fc1478e966865faebb2bcac"}'></script>
 </head>
 <body>
-  <nav>Vlogit, Inc.</nav>
-  <main class="wrap">
-    <h1>Vlogit</h1>
-    <p>The daily group-vlogging app. We’re building in public—join the journey.</p>
-    <div class="cta">
-      <a class="btn primary" href="https://your-waitlist-link">Join the waitlist</a>
-      <a class="btn" href="mailto:support@vlogitapp.com">Contact support</a>
-      <a class="btn" href="https://discord.gg/yourinvite">Join our Discord</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/" aria-label="Vlogit home">
+        <img src="/assets/vlogit-logo-white.png" alt="Vlogit" class="logo massive">
+      </a>
+      <nav class="nav">
+        <div class="social-icons">
+          <a href="https://instagram.com/theofficialvlogit" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@vlogitofficial" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://x.com/officialvlogit" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x"></i></a>
+        </div>
+        <a class="btn small contact-btn mailto eml" data-u="contact" data-d="vlogit.app">Contact Us</a>
+        <a class="btn small" href="/privacy.html">Privacy</a>
+        <a class="btn small" href="/terms.html">Terms</a>
+      </nav>
     </div>
-    <footer>
-      <div>© <span id="y"></span> Vlogit, Inc. · <a class="btn" href="/legal/terms.html">Terms</a> <a class="btn" href="/legal/privacy.html">Privacy</a> <a class="btn" href="/legal/refund.html">Refund Policy</a></div>
-    </footer>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Did You Vlogit Yet?</h1>
+          <p class="sub">We're been working hard on Vlogit! We are aiming to release our beta ASAP. Join our discord community for progress-updates and to share your ideas!</p>
+          <div class="cta-row">
+            <a class="btn primary track-waitlist" href="https://waitlister.me/p/vlogit" rel="noopener" target="_blank">Join the Waitlist!</a>
+            <a class="btn track-discord" href="/join-discord.html" rel="noopener" target="_blank">Join our Discord</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://instagram.com/theofficialvlogit" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@vlogitofficial" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/officialvlogit" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x"></i></a>
+          </div>
+
+          <p class="tiny">Questions? <a class="link mailto eml" data-u="support" data-d="vlogit.app">support@vlogit.app</a></p>
+        </div>
+
+        <div class="hero-art">
+          <img src="/assets/vlogit-icon.png" alt="Vlogit app icon" class="app-icon">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+      </div>
+      <div class="container grid-3">
+        <div class="card"><h3>Group-Focused</h3><p>Create invite-only groups with friends. Be in as many groups as you want and keep each circle separate.</p></div>
+        <div class="card"><h3>Daily picker</h3><p>Each day, one person per group is selected to create the vlog. Everyone else watches it the next morning.</p></div>
+        <div class="card"><h3>Snippets → Vlog</h3><p>Capture clips through the day or upload from your camera roll. Vlogit stitches them into one clean video.</p></div>
+        <div class="card"><h3>Privacy controls</h3><p>Groups are private by default. Choose who can view each vlog and export only when you want to.</p></div>
+        <div class="card"><h3>Unlimited groups</h3><p>Family, roommates, team, travel crew—keep memories organized without mixing audiences.</p></div>
+        <div class="card"><h3>Beta soon</h3><p>We’re shipping the core features of the app first, then layering features with your feedback!</p></div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community" class="section alt">
+      <div class="container">
+        <h2>Build with us</h2>
+        <p>Join our Discord to enter our Vlogit community and get behind-the-scenes updates. Share your vlogs to potentially be featured on our socials!</p>
+        <div class="cta-row">
+          <a class="btn primary track-discord" href="/join-discord.html" target="_blank" rel="noopener">Join Discord</a>
+          <a class="btn track-waitlist" href="https://waitlister.me/p/vlogit" target="_blank" rel="noopener">Join the Waitlist!</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vlogit — Make a memory today</title>
-  <meta name="description" content="Vlogit is the daily group-vlogging app. Join the waitlist and get updates." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:#0b0b0c;color:#fff;display:flex;min-height:100vh}
-    .wrap{margin:auto;max-width:780px;padding:48px 24px;text-align:center}
-    h1{font-size:42px;line-height:1.1;margin:0 0 12px}
-    p{opacity:.85;font-size:18px}
-    .cta{margin-top:24px;display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center}
-    a.btn{padding:12px 18px;border-radius:10px;border:1px solid #333;text-decoration:none;color:#fff}
-    a.btn.primary{background:#5b6cff;border-color:#5b6cff}
-    footer{margin-top:40px;opacity:.7;font-size:14px}
-    nav{position:fixed;top:0;left:0;right:0;padding:12px 16px;font-size:14px;opacity:.7}
-  </style>
-</head>
-<body>
-  <nav>Vlogit, Inc.</nav>
-  <main class="wrap">
-    <h1>Vlogit</h1>
-    <p>The daily group-vlogging app. We’re building in public—join the journey.</p>
-    <div class="cta">
-      <a class="btn primary" href="https://your-waitlist-link">Join the waitlist</a>
-      <a class="btn" href="mailto:support@vlogitapp.com">Contact support</a>
-      <a class="btn" href="https://discord.gg/yourinvite">Join our Discord</a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brandline">
+        <img src="/assets/vlogit-logo-white.png" alt="Vlogit" class="logo huge">
+        <span>© <span id="year"></span> Vlogit, Inc.</span>
+      </div>
+      <nav class="footnav">
+        <div class="social-icons">
+          <a href="https://instagram.com/theofficialvlogit" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/@vlogitofficial" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://x.com/officialvlogit" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-x"></i></a>
+        </div>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a class="mailto eml" data-u="contact" data-d="vlogit.app">contact@vlogit.app</a>
+      </nav>
     </div>
-    <footer>
-      <div>© <span id="y"></span> Vlogit, Inc. · <a class="btn" href="/legal/terms.html">Terms</a> <a class="btn" href="/legal/privacy.html">Privacy</a> <a class="btn" href="/legal/refund.html">Refund Policy</a></div>
-    </footer>
-  </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Email obfuscation
+    document.querySelectorAll('.eml').forEach(el => {
+      const addr = `${el.dataset.u}@${el.dataset.d}`;
+      // Only replace text content if it's already an email format
+      if (el.textContent.includes('@')) {
+        el.textContent = addr;
+      }
+      el.href = 'mailto:' + addr;
+    });
+
+    // Cloudflare custom events
+    function emitCF(name){ try{ window._cf_beacon && window._cf_beacon.push({ event:name }); }catch(e){} }
+    document.querySelectorAll('.track-waitlist').forEach(a => a.addEventListener('click', () => emitCF('Join Waitlist')));
+    document.querySelectorAll('.track-discord').forEach(a => a.addEventListener('click', () => emitCF('Join Discord')));
+  </script>
 </body>
 </html>
