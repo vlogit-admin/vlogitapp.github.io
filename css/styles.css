@@ -31,7 +31,7 @@
   
   .container{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
   
-  .site-header{position:sticky;top:0;z-index:20;height:90px;background:linear-gradient(180deg,rgba(11,11,12,.85),rgba(11,11,12,0));backdrop-filter:saturate(150%) blur(6px);border-bottom:1px solid var(--border)}
+  .site-header{position:sticky;top:0;z-index:20;height:80px;background:linear-gradient(180deg,rgba(11,11,12,.85),rgba(11,11,12,0));backdrop-filter:saturate(150%) blur(6px);border-bottom:1px solid var(--border)}
   .site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:100%}
   .brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
   
