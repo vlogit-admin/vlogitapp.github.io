@@ -25,6 +25,12 @@
     margin-top: 12px;
     margin-bottom: 12px;
   }
+  .hero .social-icons a {
+    font-size: 28px;
+  }
+  .hero .social-icons {
+    gap: 24px;
+  }
   *{box-sizing:border-box}
   html,body{height:100%}
   body{margin:0;color:var(--text);background:var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
@@ -70,9 +76,9 @@
   .contact-btn:visited{text-decoration:none !important}
   .contact-btn:focus{text-decoration:none !important}
   
-  .hero{padding:32px 0 12px;background:
-   radial-gradient(600px 300px at 70% 10%, rgba(91,108,255,.18), transparent 60%),
-   radial-gradient(600px 300px at 20% 0%, rgba(91,108,255,.12), transparent 60%)}
+  .hero{padding:32px 0 20px;background:
+   radial-gradient(600px 400px at 70% 10%, rgba(91,108,255,.18), transparent 70%),
+   radial-gradient(600px 400px at 20% 0%, rgba(91,108,255,.12), transparent 70%)}
   .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
   .hero h1{font-size:48px;line-height:1.05;margin:0 0 10px;letter-spacing:.2px}
   .hero .sub{color:var(--sub);font-size:18px;margin:0 0 18px}
@@ -90,14 +96,15 @@
   .app-icon{width:180px;height:180px;border-radius:36px;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 6px rgba(91,108,255,.08) inset}
   
   .section{padding:8px 0 32px 0}
-  .section.alt{background:var(--muted);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .section.alt{background:var(--muted);border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center}
+  .section.alt .cta-row{justify-content:center}
   .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px}
   .card h3{margin:4px 0 8px}
   .card p{color:var(--sub);margin:0}
 
   /* Consistent spacing for section headers */
-  .section h2{margin:6px 0 16px 0}
+  .section h2{margin:6px 0 16px 0;text-align:center;font-size:32px}
 
   .site-footer{border-top:1px solid var(--border);background:var(--muted)}
   .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
@@ -116,6 +123,7 @@
     .hero .sub{font-size:16px}
     .cta-row{flex-direction:column;align-items:center}
     .cta-row .btn{width:100%;max-width:280px;justify-content:center}
+    .hero .social-icons{justify-content:center}
   }
 
   @media (max-width:640px){
@@ -141,8 +149,8 @@
     .social-icons a{font-size:18px}
     .footnav{flex-wrap:wrap;gap:8px}
     .footnav a{font-size:12px;margin:0}
-    .brandline{flex-direction:column;align-items:flex-start;gap:8px}
-    .footer-inner{padding:12px 0}
+    .brandline{flex-direction:column;align-items:center;gap:8px;text-align:center}
+    .footer-inner{padding:12px 0;text-align:center}
     .nav{display:flex;gap:6px;font-size:10px}
     .nav .btn.small{padding:3px 5px;font-size:10px}
     .nav .social-icons a{font-size:12px}
